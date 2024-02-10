@@ -7,12 +7,15 @@
     <title>CONSTRUCTION CEMTEC</title>
     <link rel="stylesheet" href="./css/stylee.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
     <header class="bg p-2 py-4">
       <div class="container flex align-center justify-between">
-        <div><img src="images/logo.jpeg" width="100" alt="" /></div>
+        <div><img src="images/logo.png" width="100" alt="" /></div>
         <div>      
           <div class="btnToggle"  id="btnToggle" >
           <input type="checkbox" id="checkbox">
@@ -70,50 +73,139 @@
     
     <section id="homepage" class="home flex justify-center align-center">
       <div class="text-home p-2">
-        <h1 class="text-white p-2 typewriter text-center">
-          CONSTRUCTION CEMTEC
-        </h1>
-        <h3 class="text-white p-2 typewriter text-center" id="textHome">
-          Your best choice in the world of construction
-        </h3>
-        <h5 class="text-white p-2 typewriter" id="textHometow">
-          Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.
-        </h5>
+          <h1 class="text-white p-2 typewriter text-center">CONSTRUCTION CEMTEC</h1>
+          <h3 class="text-white p-2 typewriter text-center" id="textHome">Your best choice in the world of construction</h3>
+          <h5 class="text-white p-2 typewriter" id="textHometow">Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.</h5>
       </div>
-    </section>
+      <div id="background"></div>
+  </section>
+  <div class="slideLab container ">
+      <div  class="item-slide flex justify-center align-center" data-aos="fade-up" data-aos-delay="50" >
+        <div class="container" >
+          <div class="icon" ><i class="fas fa-tools"></i></div>
+          <h3 style="line-height: 1.5;"  >
+            Êtes-vous à la recherche de services professionnels pour effectuer des travaux extérieurs qui augmenteront la valeur et la solidité de votre proprieté?
+          </h3>
+        </div>
+      </div>
+      <div  class="item-slide flex justify-center align-center" data-aos="fade-up" data-aos-delay="250" >
+        <div class="container" >
+          <div class="icon" ><i class="fas fa-hard-hat"></i></div>
+          <h3 style="line-height: 2.5;"  >
+            À CONSTRUCTION CEMTEC Inc. Nous sommes la pour réaliser ca.
+          </h3>
+        </div>
+      </div>
+      <div  class="item-slide flex justify-center align-center" data-aos="fade-up" data-aos-delay="500" >
+        <div class="container" >
+          <div class="icon" ><i class="fas fa-phone-alt"></i></div>
+          <h3 style="line-height: 2;"  >
+            Appelez-nous pour nous parler de vos projets.
+          </h3>
+          <a href="tel:5146778650">
+            <button class="btn" >Call us 5146778650</button>
+          </a>
+        </div>
+      </div>
+      <div  class="item-slide flex justify-center align-center" data-aos="fade-up" data-aos-delay="750" >
+        <div class="container" >
+          <div class="icon" ><i class="fas fa-hands-helping"></i></div>
+          <h3 style="line-height: 1.5;"  >
+            Nous serons ravis de pouvoir vous aider et de vous offrir une estimation gratuite .
+          </h3>
+          <a href="tel:5146778650">
+            <button class="btn" >Call us 5146778650</button>
+          </a>
+        </div>
+      </div>
+  </div>
+  <!-- <div class="slides" >
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-aos="flip-left" data-aos-delay="50" >
+        <div class="item-slide flex justify-center align-center" >
+          <div class="container" >
+            <div class="icon" ><i class="fas fa-tools"></i></div>
+            <h3 style="line-height: 1.5;"  >
+              Êtes-vous à la recherche de services professionnels pour effectuer des travaux extérieurs qui augmenteront la valeur et la solidité de votre proprieté?
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-aos="flip-left" data-aos-delay="50" >
+        <div class="item-slide flex justify-center align-center" >
+          <div class="container" >
+            <div class="icon" ><i class="fas fa-hard-hat"></i></div>
+            <h3 style="line-height: 1.5;"  >
+              À CONSTRUCTION CEMTEC Inc. Nous sommes la pour réaliser ca.
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-aos="flip-left" data-aos-delay="50" >
+        <div class="item-slide flex justify-center align-center" >
+          <div class="container" >
+            <div class="icon" ><i class="fas fa-phone-alt"></i></div>
+            <h3 style="line-height: 1.5;"  >
+              Appelez-nous pour nous parler de vos projets.
+            </h3>
+            <a href="tel:5146778650">
+              <button class="btn" >Call us 5146778650</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-aos="flip-left" data-aos-delay="50" >
+        <div class="item-slide flex justify-center align-center" >
+          <div class="container" >
+            <div class="icon" ><i class="fas fa-hands-helping"></i></div>
+            <h3 style="line-height: 1.5;"  >
+              Nous serons ravis de pouvoir vous aider et de vous offrir une estimation gratuite .
+            </h3>
+            <a href="tel:5146778650">
+              <button class="btn" >Call us 5146778650</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+  
 
     <section id="servicepage" class="service">
       <h2 id="service" class="title">Services</h2>
       <div class="container my-5 flex justify-between flex-wrap">
         <div class="max-w flex align-center">
           <div>
-            <h1 class="my-5">CONTACTEZ-NOUS</h1>
-            <h3 id="serviceOneLine" class="text-secondary my-5">
+            <h1 class="my-5">CONSTRUCTION CEMTEC</h1>
+            <h3 id="serviceOneLine" class="text-secondary my-5" data-aos="fade-in" data-aos-delay="50" >
               Excavation | Foundation | Facade | Landscaping
             </h3>
-            <p id="serviceTowLine" class="text-secondary mt-3">
+            <p id="serviceTowLine" class="text-secondary mt-3" data-aos="fade-in" data-aos-delay="200" >
               Excavation, Leveling and Paving, Concrete Formwork Concrete Repair/Cracks
             </p>
-            <p id="serviceThreeLine" class="text-secondary mt-3">
+            <p id="serviceThreeLine" class="text-secondary mt-3" data-aos="fade-in" data-aos-delay="400" >
               Foundation Waterproofing, Exterior Coatings
               ,Brick Restoration
             </p>
-            <p id="serviceFourLine" class="text-secondary mt-3">
+            <p id="serviceFourLine" class="text-secondary mt-3" data-aos="fade-in" data-aos-delay="600" >
               Aménagement Paysager ,Finition Intérieur ,Entretien Paysager
             </p>
-           <a href="tel:5146778650"> <button class="btn">Call us at 514-677-8650</button></a>
+           <a href="#contactPage" data-aos="fade-in" data-aos-delay="800" > <button class="btn">Contact Us</button></a>
           </div>
         </div>
         <div>
-          <img class="image" src="images/photoFront.jpg" alt="" />
+          <img class="image" src="images/photoFront.jpg" data-aos="fade-in"  alt="" />
         </div>
       </div>
     </section>
     
     <div id="galleryPage" class="gallery container my-5">
       <h2 id="gallery" class="title ">Gallery</h2>
-      <div class="flex justify-between my-5 flex-wrap align-center">
-        <div class="mt-3" >
+      <div class="flex justify-between my-5 flex-wrap align-center" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 11.jpg"
@@ -127,7 +219,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 1.jpg"
@@ -140,7 +232,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo end.jpg"
@@ -154,7 +246,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 10.jpg"
@@ -168,7 +260,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 2.jpg"
@@ -182,7 +274,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 3.jpg"
@@ -196,7 +288,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 4.jpeg"
@@ -210,7 +302,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 5.jpg"
@@ -224,7 +316,7 @@
           <div id="caption"></div>
         </div>
         </div>
-        <div class="mt-3" >
+        <div class="mt-3" data-aos="flip-left" data-aos-delay="50" >
             <img
             id="myImg"
           src="images/photo 6.jpg"
@@ -259,13 +351,13 @@
       </div>
       <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.5520379716468!2d-73.7233747!3d45.5392194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9225f421098df%3A0x108a09517be99e34!2zTGUgTWFyaXRpbWUsIDMwNDAgQm91bGV2YXJkIEzDqXZlc3F1ZSBPICMzMDgsIExhdmFsLCBRQyBIN1YgMkcz2Iwg2YPZhtiv2Kc!5e0!3m2!1sar!2s!4v1707500254189!5m2!1sar!2s" class="map" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.6367022864214!2d-73.72352490368888!3d45.53932460571195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9225f421098df%3A0x108a09517be99e34!2sLe%20Maritime%2C%203040%20Boulevard%20L%C3%A9vesque%20O%20%23308%2C%20Laval%2C%20QC%20H7V%202G3%2C%20Canada!5e0!3m2!1sen!2sjp!4v1707542529720!5m2!1sen!2sjp" class="map" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
   <footer class="bg  " >
     <div class="flex text-white flex-wrap justify-between align-center container py-4" >
       <div class="mt-3" style="max-width: 350px;" >
-        <img src="images/logo.jpeg" alt="">
+        <img src="images/logo.png" alt="">
         <p class="mt-3" >Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.</p>
     </div>
     <div class="mt-3" >
@@ -311,7 +403,7 @@
       </div>
       <div class="flex align-center mt-2 " >
         <i style="font-size: larger;" class="fa-solid fa-location-dot"></i>
-        <a style="font-size: 14px;" class="text-white mx-2" >Montreal, QC, Canada, Quebec</a>
+        <a style="font-size: 12px;" class="text-white mx-2" >308-3040 Blvd Levesque O.Laval, Qc, H7V2G3</a>
       </div>
       <div class="flex align-center mt-2" >
         <i style="font-size: larger;" class="fa-solid fa-phone"></i>
@@ -335,6 +427,12 @@
           emailjs.init('WzUTFUKuhIYHVRffq');
       })();
       </script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              duration: 1000
+            });
+          </script>
     <script src="js/main.js"></script>
   </body>
 </html>
