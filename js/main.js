@@ -44,9 +44,9 @@ const LanguageEn = () => {
   galleryFooter.innerHTML = "Gallery";
   contact.innerHTML = "Contact us";
   contactFooter.innerHTMLFooter = "Contact us";
-  // textHome.innerHTML = "Your best choice in the world of construction";
-  // textHometow.innerHTML =
-  //   "Company specializing in Mini-Excavation, Concrete, Asphalt and Earthworks.";
+  textHome.innerHTML = "Your best choice in the world of construction";
+  textHometow.innerHTML =
+    "Company specializing in Mini-Excavation, Concrete, Asphalt and Earthworks.";
   serviceOneLine.innerHTML = "Excavation | Foundation | Facade | Landscaping";
   serviceTowLine.innerHTML =
     "Excavation, Leveling and Paving, Concrete Formwork Concrete Repair/Cracks";
@@ -71,9 +71,9 @@ const LanguageEn = () => {
   galleryFooter.innerText = "Galerie";
   contact.innerText = "Contactez-nous";
   contactFooter.innerText = "Contactez-nous";
-  // textHome.innerText = "Votre meilleur choix dans le monde de la construction";
-  // textHometow.innerText =
-  //   "Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.";
+  textHome.innerText = "Votre meilleur choix dans le monde de la construction";
+  textHometow.innerText =
+    "Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.";
   serviceOneLine.innerHTML = "Excavation | Fondation | Facade | Paysagement";
   serviceTowLine.innerHTML =
     "Excavation, Nivellement et Pavage, Coffrage de Béton Réparation de Béton/ Fissures";
@@ -92,7 +92,7 @@ const LanguageEn = () => {
 };
 
 if (localStorage.getItem("lang") == null) {
-  localStorage.setItem("lang", "en");
+  localStorage.setItem("lang", "fr");
 }
 if (localStorage.getItem("lang") == "en") {
   language.src = "images/en.png";
