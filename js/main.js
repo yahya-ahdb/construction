@@ -244,8 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide + 1);
   }
 
-  var slideInterval = setInterval(autoSlide, 5000); // تنقل تلقائيا كل 3 ثواني
-  // إيقاف التنقل التلقائي عند التحكم يدويًا
+  var slideInterval = setInterval(autoSlide, 5000);
   document.querySelector('.carousel-control-prev').addEventListener('click', function () {
     clearInterval(slideInterval);
   });
