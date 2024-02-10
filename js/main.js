@@ -16,6 +16,11 @@ const serviceFourLine = document.getElementById("serviceFourLine");
 const btnToggle = document.getElementById("btnToggle");
 const navbar = document.getElementById("navbar");
 const checkbox = document.getElementById("checkbox")
+const slideLineOne = document.getElementById("slideLineOne")
+const slideLineTwo = document.getElementById("slideLineTwo")
+const slideLineThree = document.getElementById("slideLineThree")
+const slideLineFour = document.getElementById("slideLineFour")
+
 
 btnToggle.addEventListener("click", () => {
     const computedStyle = window.getComputedStyle(navbar);
@@ -39,9 +44,9 @@ const LanguageEn = () => {
   galleryFooter.innerHTML = "Gallery";
   contact.innerHTML = "Contact us";
   contact.innerHTMLFooter = "Contact us";
-  textHome.innerHTML = "Your best choice in the world of construction";
-  textHometow.innerHTML =
-    "Company specializing in Mini-Excavation, Concrete, Asphalt and Earthworks.";
+  // textHome.innerHTML = "Your best choice in the world of construction";
+  // textHometow.innerHTML =
+  //   "Company specializing in Mini-Excavation, Concrete, Asphalt and Earthworks.";
   serviceOneLine.innerHTML = "Excavation | Foundation | Facade | Landscaping";
   serviceTowLine.innerHTML =
     "Excavation, Leveling and Paving, Concrete Formwork Concrete Repair/Cracks";
@@ -49,26 +54,40 @@ const LanguageEn = () => {
     "Foundation Waterproofing, Exterior Coatings ,Brick Restoration";
   serviceFourLine.innerHTML =
     "Landscaping, Interior Finishing, Landscaping Maintenance";
-};
-const LanguageFr = () => {
-  home.innerText = "Accueil";
+    slideLineOne.innerHTML =
+    "Are you looking for professional services to carry out exterior work that will increase the value and strength of your property?";
+    slideLineTwo.innerHTML =
+    "AT CONSTRUCTION CEMTEC Inc. We are here to achieve this.";
+    slideLineThree.innerHTML =
+    "Call us to tell us about your projects";
+    slideLineFour.innerHTML =
+    "We will be happy to help you and offer you a free estimate";
+  };
+  const LanguageFr = () => {
+    home.innerText = "Accueil";
   homeFooter.innerText = "Accueil";
   service.innerText = "Service";
   gallery.innerText = "Galerie";
   galleryFooter.innerText = "Galerie";
   contact.innerText = "Contactez-nous";
-  textHome.innerText = "Votre meilleur choix dans le monde de la construction";
-  textHome.innerTexteryFooter =
-    "Votre meilleur choix dans le monde de la construction";
-  textHometow.innerText =
-    "Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.";
+  // textHome.innerText = "Votre meilleur choix dans le monde de la construction";
+  // textHometow.innerText =
+  //   "Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.";
   serviceOneLine.innerHTML = "Excavation | Fondation | Facade | Paysagement";
   serviceTowLine.innerHTML =
     "Excavation, Nivellement et Pavage, Coffrage de Béton Réparation de Béton/ Fissures";
   serviceThreeLine.innerHTML =
-    " Imperméabilisation de Fondation ,Revêtements Extérieurs ,Restauration de Brique";
+  " Imperméabilisation de Fondation ,Revêtements Extérieurs ,Restauration de Brique";
   serviceFourLine.innerHTML =
-    "Aménagement Paysager ,Finition Intérieur ,Entretien Paysager";
+  "Aménagement Paysager ,Finition Intérieur ,Entretien Paysager";
+  slideLineOne.innerHTML =
+  "Êtes-vous à la recherche de services professionnels pour effectuer des travaux extérieurs qui augmenteront la valeur et la solidité de votre proprieté?";
+  slideLineTwo.innerHTML =
+  "À CONSTRUCTION CEMTEC Inc. Nous sommes la pour réaliser ca.";
+  slideLineThree.innerHTML =
+  "Appelez-nous pour nous parler de vos projets";
+  slideLineFour.innerHTML =
+  "Nous serons ravis de pouvoir vous aider et de vous offrir une estimation gratuite";
 };
 
 if (localStorage.getItem("lang") == null) {
@@ -199,3 +218,40 @@ var swiper = new Swiper(".mySwiper", {
 // },
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var currentSlide = 0;
+  var slides = document.querySelectorAll('.carousel-item');
+  var totalSlides = slides.length;
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add('active');
+  }
+
+  document.querySelector('.carousel-control-prev').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSlide(currentSlide - 1);
+  });
+
+  document.querySelector('.carousel-control-next').addEventListener('click', function (e) {
+    e.preventDefault();
+    showSlide(currentSlide + 1);
+  });
+
+  function autoSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  var slideInterval = setInterval(autoSlide, 5000); // تنقل تلقائيا كل 3 ثواني
+  // إيقاف التنقل التلقائي عند التحكم يدويًا
+  document.querySelector('.carousel-control-prev').addEventListener('click', function () {
+    clearInterval(slideInterval);
+  });
+
+  document.querySelector('.carousel-control-next').addEventListener('click', function () {
+    clearInterval(slideInterval);
+  });
+});
+

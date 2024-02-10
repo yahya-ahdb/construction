@@ -513,3 +513,78 @@ footer ul li {
   }
 }
 
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    height: 85vh;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    transition: left 0.5s;
+  }
+  
+  .carousel-item {
+    display: none;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 50%;
+    background-color: #00000093;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    padding: 15px 20px;
+    min-width: 300px;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: calc(100vh - 97px);
+    object-fit: cover;
+  }
+  
+  /* أنميشن للنص */
+  .animated-text {
+    animation: slideInRight 1s forwards;
+  }
+  
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
+.carousel-control-prev {
+  right: 20px;
+  top: 50%;
+}
+
+.carousel-control-next ,.carousel-control-prev {
+    border: none;
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.carousel-control-next {
+    top: 50%;
+    left: 20px;
+}
+.carousel-control-next:hover ,.carousel-control-prev:hover {
+    background: #fff;
+    color: #000;
+}
+  
