@@ -43,7 +43,7 @@ const LanguageEn = () => {
   gallery.innerHTML = "Gallery";
   galleryFooter.innerHTML = "Gallery";
   contact.innerHTML = "Contact us";
-  contact.innerHTMLFooter = "Contact us";
+  contactFooter.innerHTMLFooter = "Contact us";
   // textHome.innerHTML = "Your best choice in the world of construction";
   // textHometow.innerHTML =
   //   "Company specializing in Mini-Excavation, Concrete, Asphalt and Earthworks.";
@@ -70,6 +70,7 @@ const LanguageEn = () => {
   gallery.innerText = "Galerie";
   galleryFooter.innerText = "Galerie";
   contact.innerText = "Contactez-nous";
+  contactFooter.innerText = "Contactez-nous";
   // textHome.innerText = "Votre meilleur choix dans le monde de la construction";
   // textHometow.innerText =
   //   "Entreprise spécialisée en Mini-Excavation, Béton, Asphalte et Terrassement.";
