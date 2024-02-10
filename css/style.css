@@ -151,7 +151,7 @@ a{
 }
 .home {
     min-height: 85vh;
-    background: url("/images/background.jpg") no-repeat;
+    background: url("/construction/images/background.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 }
